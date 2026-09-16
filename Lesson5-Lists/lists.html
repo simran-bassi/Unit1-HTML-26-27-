@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School Day</title>
+</head>
+
+<body>
+
+    <!-- ============================================
+         U1L05 GUIDED PRACTICE — lists-practice.html
+
+         Code along with me. Four steps.
+         Save and refresh in the browser after EVERY step.
+
+         Comment shortcut:  Windows Ctrl + /   Mac Cmd + /
+         shift alt f = formatting
+         alt up/down = move line up/down
+         ! tab = boilerplate
+         ============================================ -->
+   <ul>
+    <li><a href="#subjects">subjects</a></li>
+    <li><a href="#schedule">schedule</a></li>
+    <li><a href="#top">back to top</a></li>
+   </ul>
+<!-- ul>(li>a)*3 -->
+   
+         <h1>My School Day</h1>
+    
+
+
+    <!-- ============================================
+         STEP 1: A SIMPLE UNORDERED LIST
+         ============================================ -->
+
+    <!-- TODO 1: Add an <h2> with id="subjects"
+         Text: My Favorite Subjects 
+         h2# : shortcut for id-->
+    <h2 id="subjects">My Favorite Subjects</h2>
+    
+
+    <!-- TODO 2: Add a <ul> with THREE <li> items.
+         Any three subjects you actually take.
+
+         Fast way: type  ul>li*3  then press Tab. -->
+<ul>
+        <li>Computer Science</li>
+        <li>Math</li>
+        <li>Social Studies</li>
+    </ul>
+
+    <!-- TODO 3: Add an <hr> to close the section -->
+
+<hr>
+
+    <!-- ============================================
+         STEP 2: AN ORDERED LIST
+         ============================================ -->
+
+    <!-- TODO 4: Add an <h2>
+         Text: My Morning Routine -->
+<h2>My Morning Routine</h2>
+
+    <!-- TODO 5: Add an <ol> with THREE <li> items.
+         They must be in real order — this is a routine,
+         so swapping them would break it.
+
+         Notice: the ONLY thing different from Step 1
+         is the container tag. ul became ol. -->
+
+<ol>
+        <li>Wake up</li>
+        <li>Get dressed</li>
+        <li>Have breakfast</li>
+        <li>Catch the bus</li>
+    </ol>
+    <!-- TODO 6: Add an <hr> to close the section -->
+
+<hr>
+
+    <!-- ============================================
+         STEP 3: NEST A LIST INSIDE A LIST
+
+         THE RULE OF THE DAY:
+         The inner <ul> goes INSIDE the <li>.
+         The </li> closes AFTER the inner list ends.
+         ul>li>ul>li*3   then Tab
+         ============================================ -->
+
+    <!-- TODO 7: Add an <h2> with id="schedule"
+         Text: Class Schedule -->
+<h2 id="schedule">Class Schedule</h2>
+    <ul>
+        <li>period 1
+            <ul>
+                <li>Computer Science</li>
+                <li>room 513</li>
+            </ul>
+        </li>
+        <li>period 2
+            <ul>
+                <li>English</li>
+                <li>room 730</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- TODO 8: Add an <ol> with TWO <li> items:
+           Period 1
+           Period 2
+
+         Inside EACH <li>, nest a <ul> with its details.
+
+         Emmet shortcut for the whole thing:
+           ol>li*2>ul>li*3   then Tab
+         (You'll trim the extras and fill in the text.) -->
+
+
+    <!-- ============================================
+         STEP 4: WIRE UP THE NAVIGATION MENU
+         ============================================ -->
+
+    <!-- TODO 9: Add a <ul> at the TOP of the page,
+         directly under <body>.
+
+         Three items, each containing a link:
+           <li><a href="#subjects">Subjects</a></li>
+           <li><a href="#schedule">Schedule</a></li>
+           <li><a href="#top">Back to Top</a></li> -->
+
+
+    <!-- TODO 10: Give the <h1> an id so "Back to Top"
+         has somewhere to land.
+
+         The <h1> should say: My School Day
+         And it needs  id="top"  -->
+        <a href="#top"> back to top</a>
+
+
+
+    <!-- ============================================
+         BEFORE YOU MOVE ON — check every box
+
+         [ ] Step 1: <ul> with 3 items, id="subjects" on the h2
+         [ ] Step 2: <ol> with 3 items — the only change was ul -> ol
+         [ ] Step 3: each inner <ul> sits INSIDE its <li>
+         [ ] Step 3: every </li> closes AFTER its inner </ul>
+         [ ] Step 4: nav <ul> at the top with 3 anchor links
+         [ ] Step 4: h1 has id="top"
+         [ ] Every id on the page is unique
+         [ ] The # is in every href, never in any id
+         [ ] Every link in the nav menu actually jumps
+         [ ] Saved and refreshed after each step
+         ============================================ -->
+
+</body>
+
+</html>
