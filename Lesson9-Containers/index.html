@@ -6,31 +6,44 @@
     <title>Containers and Identity</title>
     <style>
         .highlight{
-            background-color: bisque;
+            background-color: rgb(200, 223, 199);
         }
         #site-footer{
-            color:blueviolet;
+            color:rgb(23, 113, 39);
         }
         .card{
-            background: yellow;
+            border: 2px solid rgb(134, 159, 138);
+            border-radius: 8px;
+        }
+        #main-nav{
+            background: rgb(5, 52, 5);
+            color:aliceblue
+        }
+        .price{
+            color: rgb(56, 238, 6);
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-
+    <nav id="main-nav">...nav links...</nav>
     <p class="highlight">First Note</p>
     <p class="highlight">Second Note</p>
     <p class="highlight">Third Note</p>
+    <p>A plain note - no class, no color</p>
 
     <!-- (div.card>h2+p)*2 -->
     <div class="card">
         <h2>Product A</h2>
         <p>First Product</p>
     </div>
+    <br>
     <div class="card">
         <h2>Product B</h2>
         <p>Second Product</p>
     </div>
+    <br>
+    <p>The price is <span class="price">$29</span> today only!</p>
     <footer id="site-footer">
         @ 2026 CLUB SIGNUP
     </footer>
